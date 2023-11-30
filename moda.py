@@ -6,7 +6,8 @@ from urllib.request import urlopen
 import csv
 import pandas as pd
 
-url = "https://www.modaselvim.com/outwear?ps=10"
+url=input("input url for page you want in moda and detrmin how ps")
+
 client = urlopen(url)
 
 html = client.read()
