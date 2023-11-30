@@ -23,7 +23,7 @@ bs.prettify(products[0])
 
 
 
-f = open("C:/Users/nasy1/Desktop/moda-shoe-bag.csv", "w", encoding='utf-8')
+f = open("C:/Users/nasy1/Desktop/moda.csv", "w", encoding='utf-8')
 header="p_name\t\t\t\t\t\t\t\tp_price\t\t\t\t\t\tp_image\n"
 f.write(header)
 
@@ -49,8 +49,8 @@ for product in products :
            #print(p_image)
            #print()
 
-           f.write([p_name] +"\t\t\t" + [p_price] + "\t\t\t"+[p_image] + "\n")
+           f.write(p_name +"\t\t\t" + p_price + "\t\t\t"+p_image + "\n")
 f.close()
-pd.read_csv("C:/Users/nasy1/Desktop/moda-shoe-bag.csv")
+pd.read_csv("C:/Users/nasy1/Desktop/moda.csv")
 
 
